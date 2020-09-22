@@ -53,6 +53,7 @@
 
         .class {
             border-top: 2px solid black;
+            
         }
         body {
             font-size: large;
@@ -64,22 +65,52 @@
             color:black;
         }
 
+        .class-name  {
+
+            font-weight: bold;;
+        }
+        .trash {
+            background-color:gray;
+
+        }
+        .trash::before {
+            content: "Trash"
+
+        }      
         .bad {
             background-color:red;
 
         }
+
+        .bad::before {
+            content: "Bad"
+
+        }              
         .mediocre {
             background-color: darkorange;
 
         }
+        .mediocre::before {
+            content: "Mediocre"
+
+        }        
         .good {
             background-color:green;
+        
+        }
+        .good::before {
+            content: "Good"
+
         }
         .bis {
             background-color: mediumslateblue;
         }
+        .bis::before {
+            content: "BiS"
 
-        .bad, .mediocre, .good, .bis {
+        }
+
+        .trash, .bad, .mediocre, .good, .bis {
             text-align: center;;
         }
     </style>
@@ -100,7 +131,7 @@
 
             </div>
             <div class="row class">
-                <div class="col">Covenant Ability</div>
+                <div class="col class-name">Covenant Ability</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324739/summon-steward"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324631/fleshcraft"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=310143/soulshape"></a></div>
@@ -108,23 +139,58 @@
 
             </div>
             <div class="row class">
-                <div class="col deathknight">Death Knight</div>
+                <div class="col  class-name deathknight">Death Knight</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=312202/shackle-the-unworthy"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=315443/abomination-limb"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324128/deaths-due"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=311648/swarming-mist"></a></div>
-
             </div>
+
+            <div class="row  ">
+                <div class="col deathknight">Blood</div>
+                <div class="col trash"></div>
+                <div class="col mediocre"></div>
+                <div class="col Bis"></div>
+                <div class="col good"></div>
+            </div>
+            <div class="row  ">
+                <div class="col deathknight">Frost</div>
+                <div class="col trash"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+            </div>
+            <div class="row  ">
+                <div class="col deathknight">Unholy</div>
+                <div class="col trash"></div>
+                <div class="col mediocre"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
+            </div>            
             <div class="row class">
-                <div class="col demonhunter">Demon Hunter</div>
+                <div class="col demonhunter class-name">Demon Hunter</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=306830/elysian-decree"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=329554/fodder-to-the-flame"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=323639/the-hunt"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=317009/sinful-brand"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col demonhunter">Havoc</div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col bis"></div>
+            </div>
+            <div class="row  ">
+                <div class="col demonhunter">Vengeance</div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col mediocre"></div>
+                <div class="col bis"></div>
+            </div>
+
             <div class="row class">
-                <div class="col druid">Druid</div>
+                <div class="col druid class-name">Druid</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=326434/kindred-spirits"></a><br>
                     <a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=338041/lone-spirit"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325727/adaptive-swarm"></a></div>
@@ -133,58 +199,120 @@
             </div>
             <div class="row  ">
                 <div class="col druid">Boomkin</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bad">Bad</div>
-                <div class="col good">Good</div>
-                <div class="col bis">BiS</div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+                <div class="col bis"></div>
             </div>
             <div class="row  ">
                 <div class="col druid">Feral</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bad">Bad</div>
-                <div class="col good">Good</div>
-                <div class="col good">Good</div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
             </div>
             <div class="row  ">
                 <div class="col druid">Guardian</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col good">Good</div>
-                <div class="col good">Good</div>
-                <div class="col good">Good</div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
             </div>
             <div class="row  ">
                 <div class="col druid">Restoration</div>
-                <div class="col bad">Bad</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bis">BiS</div>
-                <div class="col good">Good</div>
+                <div class="col bad"></div>
+                <div class="col mediocre"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
             </div>
             <div class="row class">
-                <div class="col hunter">Hunter</div>
+                <div class="col hunter class-name">Hunter</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=308491/resonating-arrow"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325028/death-chakram"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328231/wild-spirits"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324149/flayed-shot"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col hunter">Beast mastery</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col trash"></div>
+                <div class="col bad"></div>
+            </div>
+            <div class="row  ">
+                <div class="col hunter">Marksmanship</div>
+                <div class="col good"></div>
+                <div class="col bis"></div>
+                <div class="col trash"></div>
+                <div class="col mediocre"></div>
+            </div>
+            <div class="row  ">
+                <div class="col hunter">Survival</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col trash"></div>
+                <div class="col bad"></div>
+            </div>            
             <div class="row class">
-                <div class="col mage">Mage</div>
+                <div class="col mage class-name">Mage</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=307443/radiant-spark"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324220/deathborne"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=314791/shifting-power"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=314793/mirrors-of-torment"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col mage">Arcane</div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+            </div>            
+            <div class="row  ">
+                <div class="col mage">Fire</div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
+            </div>            
+            <div class="row  ">
+                <div class="col mage">Frost</div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+            </div>            
+
+
             <div class="row class">
-                <div class="col monk">Monk</div>
+                <div class="col monk class-name">Monk</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=310454/weapons-of-order"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325216/bonedust-brew"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325216/bonedust-brew"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=326860/fallen-order"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col monk">Brewmaster</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
+                <div class="col bad"></div>
+            </div>                      
+            <div class="row  ">
+                <div class="col monk">Mistwalker</div>
+                <div class="col bad"></div>
+                <div class="col bis"></div>
+                <div class="col bad"></div>
+                <div class="col bad"></div>
+            </div>                      
+            <div class="row  ">
+                <div class="col monk">Windwalker</div>
+                <div class="col trash"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+            </div>                      
             <div class="row class">
-                <div class="col paladin">Paladin</div>
+                <div class="col paladin class-name">Paladin</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=304971/divine-toll"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328204/vanquishers-hammer"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328282/blessing-of-spring"><br></a>
@@ -197,59 +325,140 @@
             </div>
             <div class="row  ">
                 <div class="col paladin">Holy</div>
-                <div class="col good">Good</div>
-                <div class="col bad">Bad</div>
-                <div class="col good">Good</div>
-                <div class="col bad">Bad</div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
             </div>
             <div class="row ">
                 <div class="col paladin">Protection</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bad">Bad</div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
             </div>
             <div class="row ">
                 <div class="col paladin">Retribution</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bad">Bad</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col good">Good</div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
             </div>
             <div class="row class">
-                <div class="col priest">Priest</div>
+                <div class="col priest class-name">Priest</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://ptr.wowhead.com/spell=325013/boon-of-the-ascended"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://ptr.wowhead.com/spell=324724/unholy-nova"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://ptr.wowhead.com/spell=324724/unholy-nova"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://ptr.wowhead.com/spell=323673/mindgames"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col priest">Discipline</div>
+                <div class="col bis"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col bis"></div>
+            </div>
+            <div class="row  ">
+                <div class="col priest">Holy</div>
+                <div class="col bis"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+            </div>
+            <div class="row  ">
+                <div class="col priest">Shadow</div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+            </div>
+
             <div class="row class">
-                <div class="col rogue">Rogue</div>
+                <div class="col rogue class-name">Rogue</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=323547/echoing-reprimand"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328547/serrated-bone-spike"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328305/sepsis"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=323654/slaughter"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col rogue">Assassination</div>
+                <div class="col trash"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+            </div>    
+            <div class="row  ">
+                <div class="col rogue">Outlaw</div>
+                <div class="col trash"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
+            </div>     
+            <div class="row  ">
+                <div class="col rogue">Subtlety</div>
+                <div class="col trash"></div>
+                <div class="col bis"></div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+            </div>                                     
             <div class="row class">
-                <div class="col shaman">Shaman</div>
+                <div class="col shaman class-name">Shaman</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324386/vesper-totem"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=326059/primordial-wave"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=328923/fae-transfusion"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=320674/chain-harvest"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col shaman">Elemental</div>
+                <div class="col bis"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col mediocre"></div>
+            </div>          
+            <div class="row  ">
+                <div class="col shaman">Enhancement</div>
+                <div class="col bis"></div>
+                <div class="col bad"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+            </div>          
+            <div class="row  ">
+                <div class="col shaman">Restoration</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+            </div>                              
             <div class="row class">
-                <div class="col warlock">Warlock</div>
+                <div class="col warlock class-name">Warlock</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=312321/scouring-tithe"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325289/decimating-bolt"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325640/soul-rot"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=321792/impending-catastrophe"></a></div>
-
             </div>
+            <div class="row  ">
+                <div class="col warlock">Affliction</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+            </div>                      
+            <div class="row  ">
+                <div class="col warlock">Demonology</div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+            </div>  
+            <div class="row  ">
+                <div class="col warlock">Destruction</div>
+                <div class="col good"></div>
+                <div class="col good"></div>
+                <div class="col bad"></div>
+                <div class="col good"></div>
+            </div>  
             <div class="row class ">
-                <div class="col warrior">Warrior</div>
+                <div class="col warrior class-name">Warrior</div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=307865/spear-of-bastion"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=324143/conquerors-banner"></a></div>
                 <div class="col"><a data-wh-icon-size="medium" href="https://shadowlands.wowhead.com/spell=325886/ancient-aftershock"></a></div>
@@ -257,31 +466,32 @@
             </div>
             <div class="row ">
                 <div class="col warrior">Arm</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col good">Good</div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
             </div>
             <div class="row ">
                 <div class="col warrior">Fury</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col bis">BiS</div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col mediocre"></div>
+                <div class="col bis"></div>
             </div>
             <div class="row ">
                 <div class="col warrior">Protection</div>
-                <div class="col good">Good</div>
-                <div class="col mediocre">Mediocre</div>
-                <div class="col good">Good</div>
-                <div class="col mediocre">Mediocre</div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
+                <div class="col good"></div>
+                <div class="col mediocre"></div>
             </div>
 
             <div class="row " style="margin-top:50px">
                 <h2>Explanation</h2>
                 <ul>
                     <li>Spells are from <a href="https://www.wowhead.com">Wowhead</a></li>
-                    <li>Ratings are from <a href="https://docs.google.com/spreadsheets/u/1/d/1E1TxEKvH6LoCUwhG1-8QQ4CikblmHaaBp-Ozr9ugQHw/htmlview?usp=sharing&pru=AAABdJL6IbQ*vIELVBuahyKTV74fdzBXLw">Harldan#2316's spreadsheet</a></li>
+                    <li>Ratings are from <a href="https://docs.google.com/spreadsheets/u/1/d/1E1TxEKvH6LoCUwhG1-8QQ4CikblmHaaBp-Ozr9ugQHw/htmlview?usp=sharing&pru=AAABdJL6IbQ*vIELVBuahyKTV74fdzBXLw">Harldan#2316's spreadsheet as of September 22, 2020. Please use with caution</a></li>
+                    <li>Any errors please contact me on Discord</a></li>
                 </ul>
             </div>
 
